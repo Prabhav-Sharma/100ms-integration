@@ -1,0 +1,14 @@
+body{
+  background-color: #1f2937;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  height:97vh;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(245, 245, 245, 0.795);
+  opacity: 1; /* Firefox */
+}
