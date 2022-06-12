@@ -1,0 +1,24 @@
+.control_bar{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.action_btn{
+    font-size: x-large;
+    padding: 0.75rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgb(102, 102, 102);
+    cursor: pointer;
+    color:white;
+}
+
+.leave_btn{
+    background-color:red;
+    width: 3rem;
+    border-radius: 25px;
+    font-size: larger;
+}
