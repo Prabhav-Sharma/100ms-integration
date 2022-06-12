@@ -1,0 +1,51 @@
+.legend{
+    color: white;
+}
+
+.form_wrapper{
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.296);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    border: 2px solid gray;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    width: 30rem;
+    border-radius: 15px;
+    box-shadow: 2px 2px 25px 2px black;
+    padding:1rem;
+    gap:1rem;
+}
+
+.form>input{
+    width: 95%;
+    height: 1rem;
+    padding: 0.75rem;
+    font-family: 'Times New Roman', Times, serif;
+    color:whitesmoke;
+    background-color:#39485f;
+    border-radius:10px;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.join_button{
+    align-self: flex-end;
+    padding: 0.75rem;
+    color: white;
+    background-color: rgb(21, 134, 255);
+    border-radius:10px;
+    font-size: medium;
+    width: 7rem;
+    cursor: pointer;
+}
