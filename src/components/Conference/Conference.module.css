@@ -1,0 +1,33 @@
+.conference_wrapper{
+    padding: 1rem;
+    flex-grow:1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.peers_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.video_container{
+    background-color: #1f2937;
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    border-radius: 15px;
+    height: 86vh;
+    border:1px solid gray;
+    align-self: center;
+}
+
+.video{
+    height: 100%;
+    border-radius: 15px;
+    width: 100%;
+}
