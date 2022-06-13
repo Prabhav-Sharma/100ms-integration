@@ -1,3 +1,5 @@
+const padNumber = (num) => (num <= 9 ? "0" + num : num);
+
 const calcMeetingDuration = (ms) => {
   let timeStr = "";
   ms = (ms - (ms % 1000)) / 1000;
@@ -8,8 +10,12 @@ const calcMeetingDuration = (ms) => {
   if (mins !== 0) timeStr = mins + " mins " + timeStr;
   const hours = (ms - mins) / 60;
   if (hours !== 0) timeStr = hours + " hours " + timeStr;
-
-  return timeStr;
+  return {
+    timeStr,
+    hours: padNumber(hours),
+    mins: padNumber(mins),
+    secs: padNumber(secs),
+  };
 };
 
 export default calcMeetingDuration;

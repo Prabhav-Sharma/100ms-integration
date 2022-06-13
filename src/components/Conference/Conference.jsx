@@ -23,9 +23,11 @@ function Conference() {
 
     return () => {
       toast.info(
-        `Meeting Ended in ${calcMeetingDuration(
-          new Date().getTime() - localStorage.getItem("StartTime")
-        )}`
+        `Meeting Ended in ${
+          calcMeetingDuration(
+            new Date().getTime() - localStorage.getItem("StartTime")
+          ).timeStr
+        }`
       );
       localStorage.removeItem("StartTime");
     };

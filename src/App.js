@@ -1,6 +1,6 @@
 import "./App.css";
 import { useEffect } from "react";
-import { JoinModal, Conference, Footer } from "./components";
+import { JoinModal, Conference, Footer, Clock } from "./components";
 import {
   selectIsConnectedToRoom,
   useHMSActions,
@@ -25,6 +25,7 @@ function App() {
         <main>
           <Conference />
           <Footer />
+          <Clock />
         </main>
       ) : (
         <JoinModal />
